@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BALAMURUGAN T — Frontend Developer</title>
+  <meta name="description" content="Frontend developer crafting digital experiences. Portfolio of Balamurugan T.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Grain Overlay -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Custom Cursor -->
+  <div class="cursor" id="cursor">
+    <div class="cursor-dot"></div>
+    <div class="cursor-circle"></div>
+    <span class="cursor-label" id="cursorLabel"></span>
+  </div>
+
+  <!-- Preloader -->
+  <div class="preloader" id="preloader">
+    <div class="preloader-inner">
+      <div class="preloader-counter" id="preloaderCounter">0</div>
+      <div class="preloader-bar">
+        <div class="preloader-bar-fill" id="preloaderBar"></div>
+      </div>
+      <div class="preloader-label">LOADING</div>
+    </div>
+  </div>
+
+  <!-- Page Transition -->
+  <div class="page-transition" id="pageTransition"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <a href="#" class="nav-logo" data-magnetic data-cursor="HOME" id="navLogo">B<span class="nav-logo-accent">T</span></a>
+    <div class="nav-links">
+      <a href="#work" class="nav-link" data-magnetic data-cursor="WORK" data-nav>/WORK</a>
+      <a href="#about" class="nav-link" data-magnetic data-cursor="ABOUT" data-nav>/ABOUT</a>
+      <a href="#contact" class="nav-link" data-magnetic data-cursor="CONTACT" data-nav>/CONTACT</a>
+      <a href="https://x.com/BALAMURUGA84545" target="_blank" class="nav-link" data-magnetic data-cursor="TWITTER">/X</a>
+      <a href="https://www.linkedin.com/in/balamurugan-t4256" target="_blank" class="nav-link" data-magnetic data-cursor="LINKEDIN">/IN</a>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main id="mainContent" style="opacity: 0;">
+
+    <!-- Section: Hero -->
+    <section class="hero" id="hero">
+      <canvas id="hero-canvas" class="hero-canvas"></canvas>
+      <div class="hero-content">
+        <div class="hero-eyebrow" data-reveal>FRONTEND DEVELOPER</div>
+        <h1 class="hero-title" data-reveal>
+          <span class="hero-title-line">BALAMURUGAN</span>
+          <span class="hero-title-line hero-title-outline">T</span>
+        </h1>
+        <div class="hero-bottom" data-reveal>
+          <div class="hero-location">BASED IN INDIA</div>
+          <div class="hero-status">
+            <span class="status-dot"></span> AVAILABLE FOR WORK
+          </div>
+        </div>
+      </div>
+      <div class="hero-scroll-indicator" data-reveal>
+        <div class="scroll-line"></div>
+        <span>SCROLL</span>
+      </div>
+    </section>
+
+    <!-- Section: Work -->
+    <section class="section work" id="work">
+      <div class="section-header" data-reveal>
+        <span class="section-number">01</span>
+        <span class="section-title">SELECTED WORK</span>
+        <span class="section-count">08 PROJECTS</span>
+      </div>
+
+      <div class="work-grid">
+        <!-- Project 1 -->
+        <a href="#project-skeduler" class="work-item" data-reveal data-project="skeduler" data-cursor="VIEW">
+          <div class="work-item-index">01</div>
+          <div class="work-item-content">
+            <h3 class="work-item-title">SKEDULER</h3>
+            <p class="work-item-desc">Automated Timetable Generator</p>
+          </div>
+          <div class="work-item-meta">
+            <span class="work-item-tag">JAVASCRIPT</span>
+            <span class="work-item-year">2026</span>
+          </div>
+          <div class="work-item-preview" data-preview>
+            <div class="preview-gradient"></div>
+            <span class="preview-cta">VIEW PROJECT</span>
+          </div>
+        </a>
+
+        <!-- Project 2 -->
+        <a href="#project-blockter" class="work-item" data-reveal data-project="blockter" data-cursor="VIEW">
+          <div class="work-item-index">02</div>
+          <div class="work-item-content">
+            <h3 class="work-item-title">BLOCKTER GAME</h3>
+            <p class="work-item-desc">Interactive Browser Game</p>
+          </div>
+          <div class="work-item-meta">
+            <span class="work-item-tag">JAVASCRIPT</span>
+            <span class="work-item-year">2026</span>
+          </div>
+          <div class="work-item-preview" data-preview>
+            <div class="preview-gradient preview-gradient-2"></div>
+            <span class="preview-cta">VIEW PROJECT</span>
+          </div>
+        </a>
+
+        <!-- Project 3 -->
+        <a href="#project-pi-tracer" class="work-item" data-reveal data-project="pitracer" data-cursor="VIEW">
+          <div class="work-item-index">03</div>
+          <div class="work-item-content">
+            <h3 class="work-item-title">PI-TRACER</h3>
+            <p class="work-item-desc">High-Fidelity Python Execution Visualizer</p>
+          </div>
+          <div class="work-item-meta">
+            <span class="work-item-tag">PYTHON</span>
+            <span class="work-item-year">2026</span>
+          </div>
+          <div class="work-item-preview" data-preview>
+            <div class="preview-gradient preview-gradient-3"></div>
+            <span class="preview-cta">VIEW PROJECT</span>
+          </div>
+        </a>
+
+        <!-- Project 4 -->
+        <a href="#project-crisesfication" class="work-item" data-reveal data-project="crisesfication" data-cursor="VIEW">
+          <div class="work-item-index">04</div>
+          <div class="work-item-content">
+            <h3 class="work-item-title">CRISESFICATION</h3>
+            <p class="work-item-desc">Crisis Classification System</p>
+          </div>
+          <div class="work-item-meta">
+            <span class="work-item-tag">TYPESCRIPT</span>
+            <span class="work-item-year">2026</span>
+          </div>
+          <div class="work-item-preview" data-preview>
+            <div class="preview-gradient preview-gradient-4"></div>
+            <span class="preview-cta">VIEW PROJECT</span>
+          </div>
+        </a>
+
+        <!-- Project 5 -->
+        <a href="https://whiteboard-lyart-nine.vercel.app" target="_blank" class="work-item" data-reveal data-project="whiteboard" data-cursor="OPEN">
+          <div class="work-item-index">05</div>
+          <div class="work-item-content">
+            <h3 class="work-item-title">WHITEBOARD</h3>
+            <p class="work-item-desc">Collaborative Drawing Application</p>
+          </div>
+          <div class="work-item-meta">
+            <span class="work-item-tag">JAVASCRIPT</span>
+            <span class="work-item-year">2025</span>
+          </div>
+          <div class="work-item-preview" data-preview>
+            <div class="preview-gradient preview-gradient-5"></div>
+            <span class="preview-cta">OPEN LIVE</span>
+          </div>
+        </a>
+
+        <!-- Project 6 -->
+        <a href="#project-maxver" class="work-item" data-reveal data-project="maxver" data-cursor="VIEW">
+          <div class="work-item-index">06</div>
+          <div class="work-item-content">
+            <h3 class="work-item-title">MAXVER</h3>
+            <p class="work-item-desc">AI Personal Assistant</p>
+          </div>
+          <div class="work-item-meta">
+            <span class="work-item-tag">PYTHON</span>
+            <span class="work-item-year">2025</span>
+          </div>
+          <div class="work-item-preview" data-preview>
+            <div class="preview-gradient preview-gradient-6"></div>
+            <span class="preview-cta">VIEW PROJECT</span>
+          </div>
+        </a>
+
+        <!-- Project 7 -->
+        <a href="#project-invoice" class="work-item" data-reveal data-project="invoice" data-cursor="VIEW">
+          <div class="work-item-index">07</div>
+          <div class="work-item-content">
+            <h3 class="work-item-title">INVOICE GENERATOR</h3>
+            <p class="work-item-desc">Automated Invoice Builder</p>
+          </div>
+          <div class="work-item-meta">
+            <span class="work-item-tag">TYPESCRIPT</span>
+            <span class="work-item-year">2025</span>
+          </div>
+          <div class="work-item-preview" data-preview>
+            <div class="preview-gradient preview-gradient-7"></div>
+            <span class="preview-cta">VIEW PROJECT</span>
+          </div>
+        </a>
+
+        <!-- Project 8 -->
+        <a href="#project-max" class="work-item" data-reveal data-project="max" data-cursor="VIEW">
+          <div class="work-item-index">08</div>
+          <div class="work-item-content">
+            <h3 class="work-item-title">MAX 5.0</h3>
+            <p class="work-item-desc">AI Framework</p>
+          </div>
+          <div class="work-item-meta">
+            <span class="work-item-tag">PYTHON</span>
+            <span class="work-item-year">2026</span>
+          </div>
+          <div class="work-item-preview" data-preview>
+            <div class="preview-gradient preview-gradient-8"></div>
+            <span class="preview-cta">VIEW PROJECT</span>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Section: About -->
+    <section class="section about" id="about">
+      <div class="section-header" data-reveal>
+        <span class="section-number">02</span>
+        <span class="section-title">ABOUT</span>
+      </div>
+
+      <div class="about-content">
+        <div class="about-statement" data-reveal>
+          <p class="about-big-text">
+            I build interfaces that<br>
+            <span class="about-accent">feel considered.</span>
+          </p>
+        </div>
+
+        <div class="about-body" data-reveal>
+          <div class="about-text-col">
+            <p>
+              Frontend developer with a focus on crafting clean, performant web experiences. I work across JavaScript, Python, and TypeScript to ship projects that are both functional and well-designed.
+            </p>
+            <p>
+              From automated timetable generators to AI personal assistants, browser games to collaborative whiteboards, I approach every project with the same principle: make it work, make it right, make it fast.
+            </p>
+          </div>
+        </div>
+
+        <div class="about-pullquote" data-reveal>
+          <blockquote>
+            "The details are not the details. They make the design."
+          </blockquote>
+          <cite>- Charles Eames</cite>
+        </div>
+
+        <div class="about-stats" data-reveal>
+          <div class="stat">
+            <span class="stat-number">37</span>
+            <span class="stat-label">REPOSITORIES</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">18</span>
+            <span class="stat-label">ORIGINAL PROJECTS</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">22</span>
+            <span class="stat-label">FOLLOWERS</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">6+</span>
+            <span class="stat-label">LANGUAGES</span>
+          </div>
+        </div>
+
+        <div class="about-languages" data-reveal>
+          <h4 class="about-subtitle">TOOLS & LANGUAGES</h4>
+          <div class="lang-grid">
+            <div class="lang-item">
+              <span class="lang-name">JavaScript</span>
+              <div class="lang-bar"><div class="lang-fill" data-width="90"></div></div>
+            </div>
+            <div class="lang-item">
+              <span class="lang-name">Python</span>
+              <div class="lang-bar"><div class="lang-fill" data-width="85"></div></div>
+            </div>
+            <div class="lang-item">
+              <span class="lang-name">TypeScript</span>
+              <div class="lang-bar"><div class="lang-fill" data-width="75"></div></div>
+            </div>
+            <div class="lang-item">
+              <span class="lang-name">Java</span>
+              <div class="lang-bar"><div class="lang-fill" data-width="50"></div></div>
+            </div>
+            <div class="lang-item">
+              <span class="lang-name">C#</span>
+              <div class="lang-bar"><div class="lang-fill" data-width="40"></div></div>
+            </div>
+            <div class="lang-item">
+              <span class="lang-name">HTML/CSS</span>
+              <div class="lang-bar"><div class="lang-fill" data-width="95"></div></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Section: Contact -->
+    <section class="section contact" id="contact">
+      <div class="section-header" data-reveal>
+        <span class="section-number">03</span>
+        <span class="section-title">CONTACT</span>
+      </div>
+
+      <div class="contact-content">
+        <div class="contact-cta" data-reveal>
+          <p class="contact-big-text">
+            Let's build<br>something <span class="contact-accent">together.</span>
+          </p>
+        </div>
+
+        <div class="contact-links" data-reveal>
+          <a href="mailto:bala4256t@gmail.com" class="contact-link-large" data-magnetic data-cursor="EMAIL">
+            <span class="contact-link-label">EMAIL</span>
+            <span class="contact-link-value">bala4256t@gmail.com</span>
+            <span class="contact-link-arrow">&rarr;</span>
+          </a>
+
+          <a href="https://github.com/BalamuruganT006" target="_blank" class="contact-link-large" data-magnetic data-cursor="GITHUB">
+            <span class="contact-link-label">GITHUB</span>
+            <span class="contact-link-value">github.com/BalamuruganT006</span>
+            <span class="contact-link-arrow">&rarr;</span>
+          </a>
+
+          <a href="https://x.com/BALAMURUGA84545" target="_blank" class="contact-link-large" data-magnetic data-cursor="TWITTER">
+            <span class="contact-link-label">TWITTER / X</span>
+            <span class="contact-link-value">@BALAMURUGA84545</span>
+            <span class="contact-link-arrow">&rarr;</span>
+          </a>
+
+          <a href="https://www.linkedin.com/in/balamurugan-t4256" target="_blank" class="contact-link-large" data-magnetic data-cursor="LINKEDIN">
+            <span class="contact-link-label">LINKEDIN</span>
+            <span class="contact-link-value">linkedin.com/in/balamurugan-t4256</span>
+            <span class="contact-link-arrow">&rarr;</span>
+          </a>
+        </div>
+
+        <div class="contact-footer" data-reveal>
+          <div class="contact-footer-left">
+            <span>DESIGNED & DEVELOPED BY BALAMURUGAN T</span>
+          </div>
+          <div class="contact-footer-right">
+            <span>&copy; 2026</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Project Detail Modal -->
+  <div class="project-modal" id="projectModal">
+    <button class="modal-close" id="modalClose" data-cursor="CLOSE" data-magnetic>&times;</button>
+    <div class="modal-content" id="modalContent"></div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script type="importmap">
+  {
+    "imports": {
+      "three": "https://cdn.jsdelivr.net/npm/three@0.164.1/build/three.module.js",
+      "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.164.1/examples/jsm/"
+    }
+  }
+  </script>
+  <script type="module" src="hero3d.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
